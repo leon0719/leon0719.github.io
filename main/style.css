@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&family=Poppins:wght@300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&family=Poppins:wght@300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap");
 body {
-    font-family: "", sans-serif;
-    text-align: center;
+  font-family: "", sans-serif;
+  text-align: center;
 }
 
 h1, h2, p {
-    font-family: "Ubuntu", serif;
-    text-align: center;
+  font-family: "Ubuntu", serif;
+  text-align: center;
 }
