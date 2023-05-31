@@ -7,4 +7,10 @@ body {
 h1, h2, p {
   font-family: "Ubuntu", serif;
   text-align: center;
+  padding: 10px;
+  color: brown;
+}
+
+p {
+  font-size: 22px;
 }
