@@ -5,6 +5,27 @@
   box-sizing: border-box;
 }
 
+.circle {
+  position: fixed;
+  top: -50vmin;
+  left: -50vmin;
+  width: 100vmin;
+  height: 100vmin;
+  border-radius: 47% 53% 61% 39%/45% 51% 49% 55%;
+  background: #65c8ff;
+}
+
+.circle::after {
+  content: "";
+  position: inherit;
+  right: -50vmin;
+  bottom: -55vmin;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background: #143d81;
+}
+
 body {
   font-family: "Ubuntu", serif;
   text-align: left;
@@ -33,4 +54,16 @@ p {
   line-height: 1.5;
   font-size: 22px;
   opacity: 0.9;
+}
+
+.content {
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 20px 18px 15px 20px;
+  box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+.content::hover {
+  box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.6);
 }
