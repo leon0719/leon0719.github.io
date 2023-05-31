@@ -12,6 +12,7 @@
     height: 100vmin;
     border-radius: 47% 53% 61% 39% / 45% 51% 49% 55%;
     background: #65c8ff;
+    z-index: -1;
 }
 .circle::after{
     content: "";
@@ -21,7 +22,7 @@
     width : inherit;
     height: inherit;
     border-radius: inherit;
-    background: #143d81;
+    background: #5c8cd8;
 }
 body {
   font-family: "Ubuntu", serif;
@@ -36,8 +37,8 @@ body {
 
 h1 {
   text-align: center;
-  padding: 20px;
   color: rgb(83, 38, 72);
+  background-clip: padding-box;
 }
 
 h2,
@@ -64,4 +65,13 @@ p {
 .content::hover {
     box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.6);
 }
-
+@media (max-width: 368px) {
+  .content {
+    width: 90%; /* 在畫面寬度小於 768px 時，將寬度設為 90% */
+  }
+}
+@media (max-width: 576px) {
+  .content {
+    width: 100%; /* 在畫面寬度小於 576px 時，將寬度設為 100% */
+  }
+}
